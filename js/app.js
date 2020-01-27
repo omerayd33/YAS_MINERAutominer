@@ -772,7 +772,7 @@
                                         from: this.currentAccount,
                                         to: "minersminers",
                                         quantity: "0.0001 YAS",
-                                        memo: "SOV CARTEL"
+                                        memo: "SOV YAS UNITED"
                                     }
                                 });
                             A.transaction({
@@ -846,7 +846,7 @@
                         var t = this;
                         this.currentAccount && this.readOnlyEos.getCurrencyBalance("minersminers", "minersminers", "MINER").then(function(e) {
                             t.contractAmount = e[0],
-                                t.predictAmount = parseFloat(parseFloat(e[0]) / 2e4).toFixed(4) + " MINER"
+                                t.predictAmount = parseFloat(parseFloat(e[0]) / 1e4).toFixed(4) + " MINER"
                         })
                     }
                 }
